@@ -4,7 +4,7 @@ import styled from 'styled-components/native';
 
 // ---------------------------------------------------------- Container 
 interface Props{
-    children:ReactElement[]
+    children:ReactElement[] | ReactElement
 }
  const Container :FC <Props> = ({children}:Props):ReactElement  => {
   return <StyledContainer>{children}</StyledContainer>;
@@ -38,12 +38,12 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 interface IconsInterface {
-  home : ReactElement
-  home_o : ReactElement
-  bookmark : ReactElement
-  bookmark_o : ReactElement
-  edit : ReactElement
-  deleteIcon : ReactElement
+  home : ReactElement,
+  home_o : ReactElement,
+  bookmark : ReactElement,
+  bookmark_o : ReactElement,
+  edit : ReactElement,
+  deleteIcon : ReactElement,
 }
 const Icons :IconsInterface = {
   home : <Ionicons name="home" size={30} color="#000" />,
