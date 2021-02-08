@@ -18,7 +18,7 @@ const StyledContainer = styled.View`
 `;
 // ---------------------------------------------------------- Text Types
 
-const H1 = styled.Text`
+const H1:ReactElement = styled.Text`
   font-size: 28px;
 `;
 const H2 = styled.Text`
@@ -44,6 +44,8 @@ interface IconsInterface {
   bookmark_o : ReactElement,
   edit : ReactElement,
   deleteIcon : ReactElement,
+  user : ReactElement,
+  user_o : ReactElement,
 }
 const Icons :IconsInterface = {
   home : <Ionicons name="home" size={30} color="#000" />,
@@ -51,7 +53,9 @@ const Icons :IconsInterface = {
   bookmark : <FontAwesome name="bookmark" size={30} color="#000" />,
   bookmark_o : <FontAwesome name="bookmark-o" size={30} color="#000" />,
   edit : <FontAwesome name="edit" size={30} color="#000" />,
-  deleteIcon : <MaterialCommunityIcons name="delete" size={30} color="#000" />
+  deleteIcon : <MaterialCommunityIcons name="delete" size={30} color="#000" />,
+  user :<FontAwesome name="user" size={30} color="#000" />,
+  user_o :<FontAwesome name="user-o" size={30} color="#000" />,
 }
 // ----------------------------------------------------------
 
