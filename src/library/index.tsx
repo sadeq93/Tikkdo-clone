@@ -18,7 +18,7 @@ const StyledContainer = styled.View`
 `;
 // ---------------------------------------------------------- Text Types
 
-const H1:ReactElement = styled.Text`
+const H1 = styled.Text`
   font-size: 28px;
 `;
 const H2 = styled.Text`
